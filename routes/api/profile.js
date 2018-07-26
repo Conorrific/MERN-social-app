@@ -258,7 +258,7 @@ router.delete(
   }
 );
 
-// @route   DELETE api/profile/eeducation/:edu_id
+// @route   DELETE api/profile/education/:edu_id
 // @desc    Delete education from profile
 // @access  Private
 router.delete(
@@ -289,7 +289,7 @@ router.delete(
   "/",
   passport.authenticate("jwt", { session: false }),
   (req, res) => {
-    Profile.fineOneAndRemove({ user: req.user.id }).then(() => {
+    Profile.findOneAndRemove({ user: req.user.id }).then(() => {
       User.findOneAndRemove({ _id: req.user.id }).then(() =>
         res.json({ success: true })
       );
