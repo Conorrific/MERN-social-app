@@ -146,7 +146,7 @@ class CreateProfile extends Component {
           />
 
           <InputGroup
-            placeholder="LinkedIn Profile URL"
+            placeholder="Linkedin Profile URL"
             name="linkedin"
             icon="fab fa-linkedin"
             value={this.state.linkedin}
@@ -164,7 +164,7 @@ class CreateProfile extends Component {
           />
 
           <InputGroup
-            placeholder="Instagram Profile URL"
+            placeholder="Instagram Page URL"
             name="instagram"
             icon="fab fa-instagram"
             value={this.state.instagram}
@@ -208,7 +208,7 @@ class CreateProfile extends Component {
                   info="A unique handle for your profile URL. Your full name, company name, nickname, etc"
                 />
                 <SelectListGroup
-                  placeholder="* Status"
+                  placeholder="Status"
                   name="status"
                   value={this.state.status}
                   onChange={this.onChange}
@@ -246,7 +246,8 @@ class CreateProfile extends Component {
                   value={this.state.skills}
                   onChange={this.onChange}
                   error={errors.skills}
-                  info="Please use comma separated values (eg. HTML,CSS,JavaScript,PHP"
+                  info="Please use comma separated values (eg.
+                    HTML,CSS,JavaScript,PHP"
                 />
                 <TextFieldGroup
                   placeholder="Github Username"
